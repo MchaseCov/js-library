@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Library App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="application.css">
+<body>
+
+<header>
+ <h1>Books</h1>
+</header>
+
+<table id="library-index-table">
+  <thead>
+<tr>
+  <th>Name</th>
+  <th>Author</th>
+  <th>Page Count</th>
+  <th>Has been read?</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<h2>Add a book:</h2>
+<form id="new-book-form">
+  Book Name: <input type="text" name="bookName"><br>
+  Author Name: <input type="text" name="authName"><br>
+  Page Count: <input type="number" name="pageCount"><br>
+  <input type="button" value="Submit" id="submit-new-book">
+</form>
+
+</body>
+<script src="application.js"></script>
+
+</html>
