@@ -36,6 +36,7 @@ function resetTable() {
 function populateTableWithBooks() {
   for (let i = 0; i < myLibrary.length; i++) {
     let newRow = libraryIndexTable.insertRow(i);
+    newRow.dataset.index = i;
     newRow.insertCell(0).innerHTML = myLibrary[i].title;
     newRow.insertCell(1).innerHTML = myLibrary[i].author || "N/A";
     newRow.insertCell(2).innerHTML = myLibrary[i].pageCount || "N/A";
